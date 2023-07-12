@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "id": "reksontestmod",
+  "version": "${version}",
+
+  "name": "Rekson Test Mod",
+  "description": "Rekson mod",
+  "authors": [
+    "Anonumas"
+  ],
+  "contact": {
+    "homepage": "https://fabricmc.net/",
+    "sources": "https://github.com/FabricMC/fabric-example-mod"
+  },
+
+  "license": "CC0-1.0",
+  "icon": "assets/modid/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.anonumas.reksontestmod.ReksonTestMod"
+    ],
+    "client": [
+      "net.anonumas.reksontestmod.ReksonTestModClient"
+    ]
+  },
+  "mixins": [
+    "reksontestmod.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.14.21",
+    "fabric-api": "*",
+    "minecraft": "~1.19",
+    "java": ">=17"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}

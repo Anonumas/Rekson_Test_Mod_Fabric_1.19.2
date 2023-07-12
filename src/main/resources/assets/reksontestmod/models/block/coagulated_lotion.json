@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_column",
+  "textures": {
+    "end": "reksontestmod:block/coagulated_lotion_top",
+    "side": "reksontestmod:block/coagulated_lotion"
+  }
+}

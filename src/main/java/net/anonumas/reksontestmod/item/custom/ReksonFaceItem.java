@@ -46,18 +46,21 @@ public class ReksonFaceItem extends Item {
     private void outputRandomNumber(PlayerEntity player){
 
         switch(getRandomNumber()){
-            case 0: player.sendMessage(Text.literal("That's right, I'll stroke you once before I kill you")); break;
-            case 1: player.sendMessage(Text.literal("Hydrate? Frick!")); break;
-            case 2: player.sendMessage(Text.literal("Oh, okay you just fisted me.  Okay, that's fine if you fist me.")); break;
-            case 3: player.sendMessage(Text.literal("If you can't coom on me what's the point")); break;
-            case 4: player.sendMessage(Text.literal("https://www.twitch.tv/reksongames")); break;
-            case 5: player.sendMessage(Text.literal("That's enough balls, alright?")); break;
-            case 6: player.sendMessage(Text.literal("I am inside myself.")); break;
-            case 7: player.sendMessage(Text.literal("It doesn't matter if he's sad, right? It matters that we fucked him.")); break;
-            case 8: player.sendMessage(Text.literal("I'm about to get fisted.")); break;
-            case 9: player.sendMessage(Text.literal("This stick is a little lopsided, that's okay!")); break;
-            case 10: player.sendMessage(Text.literal("I didn't eat any of his balls yet.")); break;
+            case 0: sendMessagetoPlayer("That's right, I'll stroke you once before I kill you", player); break;
+            case 1: sendMessagetoPlayer("Hydrate? Frick!", player); break;
+            case 2: sendMessagetoPlayer("Oh, okay you just fisted me.  Okay, that's fine if you fist me.", player); break;
+            case 3: sendMessagetoPlayer("If you can't coom on me what's the point", player); break;
+            case 4: sendMessagetoPlayer("https://www.twitch.tv/reksongames", player); break;
+            case 5: sendMessagetoPlayer("That's enough balls, alright?", player); break;
+            case 6: sendMessagetoPlayer("I am inside myself.", player); break;
+            case 7: sendMessagetoPlayer("It doesn't matter if he's sad, right? It matters that we fucked him.", player); break;
+            case 8: sendMessagetoPlayer("I'm about to get fisted.", player); break;
+            case 9: sendMessagetoPlayer("This stick is a little lopsided, that's okay!", player); break;
+            case 10: sendMessagetoPlayer("I didn't eat any of his balls yet.", player); break;
         }
+    }
+    private static void sendMessagetoPlayer(String x, PlayerEntity player){
+        player.sendMessage(Text.literal(x));
     }
     private int getRandomNumber(){
         return Random.createLocal().nextInt(11);

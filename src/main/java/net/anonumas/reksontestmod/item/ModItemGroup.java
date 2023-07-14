@@ -8,5 +8,5 @@ import net.minecraft.util.Identifier;
 
 public class ModItemGroup {
     public static final ItemGroup REKSON = FabricItemGroupBuilder.build(
-            new Identifier(ReksonTestMod.MOD_ID, "rekson"), () -> new ItemStack(ModItems.UNREFINED_LOTION));
+            new Identifier(ReksonTestMod.MOD_ID, "rekson"), () -> new ItemStack(ModItems.REKSON_FACE));
 }

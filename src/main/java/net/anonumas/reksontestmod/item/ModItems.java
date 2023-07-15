@@ -14,7 +14,7 @@ public class ModItems {
 
     public static final Item UNREFINED_LOTION = registerItem("unrefined_lotion",
             new Item(new FabricItemSettings().group(ModItemGroup.REKSON).food(
-                    new FoodComponent.Builder().hunger(1).saturationModifier(4f).statusEffect(
+                    new FoodComponent.Builder().hunger(1).saturationModifier(0.3f).statusEffect(
                             new StatusEffectInstance(StatusEffects.NAUSEA, 100, 1),
                             1f).build())));
     public static final Item LOTION_INGOT = registerItem("lotion_ingot",

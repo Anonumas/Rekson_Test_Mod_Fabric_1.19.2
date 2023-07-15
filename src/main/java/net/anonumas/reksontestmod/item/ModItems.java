@@ -19,6 +19,9 @@ public class ModItems {
                             1f).build())));
     public static final Item LOTION_INGOT = registerItem("lotion_ingot",
             new Item(new FabricItemSettings().group(ModItemGroup.REKSON)));
+    public static final Item FISH_SAUCE = registerItem("fish_sauce",
+            new Item(new FabricItemSettings().group(ModItemGroup.REKSON)));
+
     public static final Item REKSON_FACE = registerItem("rekson_face",
             new ReksonFaceItem(new FabricItemSettings().group(ModItemGroup.REKSON).fireproof().maxCount(1)));
 

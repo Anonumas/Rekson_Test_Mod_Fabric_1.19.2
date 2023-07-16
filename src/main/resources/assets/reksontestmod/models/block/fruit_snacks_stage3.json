@@ -1,0 +1,6 @@
+{
+  "parent": "block/crop",
+  "textures": {
+    "crop": "reksontestmod:block/fruit_snacks_stage3"
+  }
+}

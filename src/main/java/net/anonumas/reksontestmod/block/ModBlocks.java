@@ -1,11 +1,13 @@
 package net.anonumas.reksontestmod.block;
 
 import net.anonumas.reksontestmod.ReksonTestMod;
+import net.anonumas.reksontestmod.block.custom.FruitSnacksCrop;
 import net.anonumas.reksontestmod.block.custom.StickyBlock;
 import net.anonumas.reksontestmod.item.ModItemGroup;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.Block;
+import net.minecraft.block.Blocks;
 import net.minecraft.block.Material;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
@@ -19,9 +21,14 @@ public class ModBlocks {
                     ), ModItemGroup.REKSON);
     public static final Block BLOCK_OF_LOTION = registerBlock("block_of_lotion",
             new Block(FabricBlockSettings.of(Material.METAL).strength(5f).requiresTool()), ModItemGroup.REKSON);
+    public static final Block FRUIT_SNACKS_CROP = registerBlockWithoutItem("fruit_snacks_crop",
+            new FruitSnacksCrop(FabricBlockSettings.copy(Blocks.WHEAT)));
 
     private static Block registerBlock(String name, Block block, ItemGroup tab){
         registerBlockItem(name, block, tab);
+        return Registry.register(Registry.BLOCK, new Identifier(ReksonTestMod.MOD_ID, name), block);
+    }
+    private static Block registerBlockWithoutItem(String name, Block block){
         return Registry.register(Registry.BLOCK, new Identifier(ReksonTestMod.MOD_ID, name), block);
     }
 

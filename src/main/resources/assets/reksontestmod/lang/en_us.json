@@ -1,10 +1,17 @@
 {
   "item.reksontestmod.unrefined_lotion": "Unrefined Lotion",
   "item.reksontestmod.lotion_ingot": "Lotion Ingot",
-  "block.reksontestmod.coagulated_lotion": "Coagulated Lotion",
-  "block.reksontestmod.block_of_lotion": "Block of Lotion",
   "item.reksontestmod.rekson_face": "Rekson Face",
   "item.reksontestmod.fish_sauce": "Fish Sauce",
+  "item.reksontestmod.fruit_snacks": "Fruit Snacks",
+  "item.reksontestmod.fruit_snack_seeds": "Fruit Snack Seeds",
+
+
+
+
+  "block.reksontestmod.coagulated_lotion": "Coagulated Lotion",
+  "block.reksontestmod.block_of_lotion": "Block of Lotion",
+  "block.reksontestmod.fruit_snacks_crop": "Fruit Snacks Crop",
 
 
   "itemGroup.reksontestmod.rekson": "Rekson Mod"

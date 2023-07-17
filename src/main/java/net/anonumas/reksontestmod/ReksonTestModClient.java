@@ -9,6 +9,7 @@ public class ReksonTestModClient implements ClientModInitializer {
     @Override
     public void onInitializeClient() {
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.FRUIT_SNACKS_CROP, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.REKSON_ONION_CROP, RenderLayer.getCutout());
 
     }
 }

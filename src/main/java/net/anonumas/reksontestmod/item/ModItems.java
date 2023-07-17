@@ -20,8 +20,10 @@ public class ModItems {
                             1f).build())));
     public static final Item LOTION_INGOT = registerItem("lotion_ingot",
             new Item(new FabricItemSettings().group(ModItemGroup.REKSON)));
+
+
     public static final Item FISH_SAUCE = registerItem("fish_sauce",
-            new Item(new FabricItemSettings().group(ModItemGroup.REKSON).recipeRemainder(Item.byRawId(374))));
+            new Item(new FabricItemSettings().group(ModItemGroup.REKSON).recipeRemainder(Items.GLASS_BOTTLE)));
 
     public static final Item REKSON_FACE = registerItem("rekson_face",
             new ReksonFaceItem(new FabricItemSettings().group(ModItemGroup.REKSON).fireproof().maxCount(1)));
@@ -33,6 +35,10 @@ public class ModItems {
     public static final Item FRUIT_SNACK_SEEDS = registerItem("fruit_snack_seeds",
             new AliasedBlockItem(ModBlocks.FRUIT_SNACKS_CROP,
                     new FabricItemSettings().group(ModItemGroup.REKSON)));
+    public static final Item REKSON_ONION = registerItem("rekson_onion",
+            new AliasedBlockItem(ModBlocks.REKSON_ONION_CROP,
+                    new FabricItemSettings().group(ModItemGroup.REKSON).food(
+                            new FoodComponent.Builder().hunger(1).saturationModifier(0.7f).build())));
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registry.ITEM, new Identifier(ReksonTestMod.MOD_ID, name), item);

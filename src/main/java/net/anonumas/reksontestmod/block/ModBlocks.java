@@ -2,6 +2,7 @@ package net.anonumas.reksontestmod.block;
 
 import net.anonumas.reksontestmod.ReksonTestMod;
 import net.anonumas.reksontestmod.block.custom.FruitSnacksCrop;
+import net.anonumas.reksontestmod.block.custom.ReksonOnionCrop;
 import net.anonumas.reksontestmod.block.custom.StickyBlock;
 import net.anonumas.reksontestmod.item.ModItemGroup;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
@@ -23,6 +24,8 @@ public class ModBlocks {
             new Block(FabricBlockSettings.of(Material.METAL).strength(5f).requiresTool()), ModItemGroup.REKSON);
     public static final Block FRUIT_SNACKS_CROP = registerBlockWithoutItem("fruit_snacks_crop",
             new FruitSnacksCrop(FabricBlockSettings.copy(Blocks.WHEAT)));
+    public static final Block REKSON_ONION_CROP = registerBlockWithoutItem("rekson_onion_crop",
+            new ReksonOnionCrop(FabricBlockSettings.copy(Blocks.POTATOES)));
 
     private static Block registerBlock(String name, Block block, ItemGroup tab){
         registerBlockItem(name, block, tab);

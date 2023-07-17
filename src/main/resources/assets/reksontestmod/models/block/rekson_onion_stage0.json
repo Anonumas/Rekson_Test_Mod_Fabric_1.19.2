@@ -1,0 +1,6 @@
+{
+  "parent": "block/crop",
+  "textures": {
+    "crop": "reksontestmod:block/rekson_onion_stage0"
+  }
+}

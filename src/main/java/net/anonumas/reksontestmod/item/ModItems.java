@@ -24,6 +24,8 @@ public class ModItems {
 
     public static final Item FISH_SAUCE = registerItem("fish_sauce",
             new Item(new FabricItemSettings().group(ModItemGroup.REKSON).recipeRemainder(Items.GLASS_BOTTLE)));
+    public static final Item CINNAMON_POWDER = registerItem("cinnamon_powder",
+            new Item(new FabricItemSettings().group(ModItemGroup.REKSON)));
 
     public static final Item REKSON_FACE = registerItem("rekson_face",
             new ReksonFaceItem(new FabricItemSettings().group(ModItemGroup.REKSON).fireproof().maxCount(1)));

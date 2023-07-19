@@ -3,6 +3,8 @@ package net.anonumas.reksontestmod;
 import net.anonumas.reksontestmod.block.ModBlocks;
 import net.anonumas.reksontestmod.item.ModItems;
 import net.anonumas.reksontestmod.villager.ModVillagers;
+import net.anonumas.reksontestmod.world.feature.ModConfiguredFeatures;
+import net.anonumas.reksontestmod.world.gen.ModOreGeneration;
 import net.fabricmc.api.ModInitializer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -14,10 +16,13 @@ public class ReksonTestMod implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+		ModConfiguredFeatures.registerConfiguredFeatures();
+
 		ModItems.resisterModItems();
 		ModBlocks.resisterModBlocks();
 		ModVillagers.registerVillagers();
 		ModVillagers.registerTrades();
+		ModOreGeneration.GenerateOres();
 
 	}
 }

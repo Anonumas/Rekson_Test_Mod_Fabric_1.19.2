@@ -2,6 +2,7 @@ package net.anonumas.reksontestmod;
 
 import net.anonumas.reksontestmod.block.ModBlocks;
 import net.anonumas.reksontestmod.item.ModItems;
+import net.anonumas.reksontestmod.util.ModLootTableModifiers;
 import net.anonumas.reksontestmod.villager.ModVillagers;
 import net.anonumas.reksontestmod.world.feature.ModConfiguredFeatures;
 import net.anonumas.reksontestmod.world.gen.ModOreGeneration;
@@ -23,6 +24,7 @@ public class ReksonTestMod implements ModInitializer {
 		ModVillagers.registerVillagers();
 		ModVillagers.registerTrades();
 		ModOreGeneration.GenerateOres();
+		ModLootTableModifiers.modifyLootTables();
 
 	}
 }

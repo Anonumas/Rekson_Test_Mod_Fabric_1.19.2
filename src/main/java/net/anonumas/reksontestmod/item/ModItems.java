@@ -18,6 +18,14 @@ public class ModItems {
                     new FoodComponent.Builder().hunger(1).saturationModifier(0.3f).statusEffect(
                             new StatusEffectInstance(StatusEffects.NAUSEA, 100, 1),
                             1f).build())));
+    public static final Item SWEET_AND_SALTY_FRUIT_SNACKS = registerItem("sweet_and_salty_fruit_snacks",
+            new Item(new FabricItemSettings().group(ModItemGroup.REKSON).food(
+                    new FoodComponent.Builder().hunger(6).saturationModifier(1.0f).statusEffect(
+                            new StatusEffectInstance(StatusEffects.SPEED, 200, 2),
+                            1f).statusEffect(
+                                    new StatusEffectInstance(StatusEffects.HASTE,200,2),1).statusEffect(
+                                            new StatusEffectInstance(StatusEffects.REGENERATION,200,1),1
+                    ).build())));
     public static final Item LOTION_INGOT = registerItem("lotion_ingot",
             new Item(new FabricItemSettings().group(ModItemGroup.REKSON)));
 

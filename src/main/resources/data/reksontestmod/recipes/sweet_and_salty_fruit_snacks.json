@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "A": {
+      "item": "reksontestmod:fish_sauce"
+    },
+    "B": {
+      "item": "reksontestmod:cinnamon_powder"
+    },
+    "C": {
+      "item": "reksontestmod:rekson_onion"
+    },
+    "E": {
+      "item": "reksontestmod:fruit_snacks"
+    }
+  },
+  "pattern": [
+    "BAB",
+    " C ",
+    "EEE"
+  ],
+  "result": {
+    "item": "reksontestmod:sweet_and_salty_fruit_snacks"
+  }
+}

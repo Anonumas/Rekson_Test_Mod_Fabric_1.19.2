@@ -18,5 +18,9 @@
   "block.reksontestmod.rekson_onion_crop": "Onion Crop",
 
 
-  "itemGroup.reksontestmod.rekson": "Rekson Mod"
+  "itemGroup.reksontestmod.rekson": "Rekson Mod",
+
+  "key.category.reksontestmod.rekson": "Rekson Keys",
+  "key.reksontestmod.pay_respects": "Pay Respects"
+
 }

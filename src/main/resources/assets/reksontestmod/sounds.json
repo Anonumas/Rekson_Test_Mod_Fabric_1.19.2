@@ -1,0 +1,34 @@
+{
+  "drudge": {
+    "sounds": [
+      {
+        "name": "reksontestmod:drudge",
+        "stream": true
+      }
+    ]
+  },
+  "ukulele_apology": {
+    "sounds": [
+      {
+        "name": "reksontestmod:ukulele_apology",
+        "stream": true
+      }
+    ]
+  },
+  "wet_brick_dry_brick": {
+    "sounds": [
+      {
+        "name": "reksontestmod:wet_brick_dry_brick",
+        "stream": true
+      }
+    ]
+  },
+  "lola_loading_diss": {
+    "sounds": [
+      {
+        "name": "reksontestmod:lola_loading_diss",
+        "stream": true
+      }
+    ]
+  }
+}

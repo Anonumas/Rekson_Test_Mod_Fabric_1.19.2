@@ -16,7 +16,8 @@ public class KeyInputHandler {
     public static void registerKeyInputs(){
         ClientTickEvents.END_CLIENT_TICK.register(client -> {
             if (payRespectKey.wasPressed()){
-                client.player.sendChatMessage("f", Text.literal("f to pay respects"));
+                client.player.sendChatMessage("f", null);
+
 
             }
         });

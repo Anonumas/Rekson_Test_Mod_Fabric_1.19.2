@@ -2,6 +2,7 @@ package net.anonumas.reksontestmod.item;
 
 import net.anonumas.reksontestmod.ReksonTestMod;
 import net.anonumas.reksontestmod.block.ModBlocks;
+import net.anonumas.reksontestmod.item.custom.ModHoeItem;
 import net.anonumas.reksontestmod.item.custom.ModMusicDiscItem;
 import net.anonumas.reksontestmod.item.custom.ReksonFaceItem;
 import net.anonumas.reksontestmod.sound.ModSounds;
@@ -40,6 +41,7 @@ public class ModItems {
 
     public static final Item REKSON_FACE = registerItem("rekson_face",
             new ReksonFaceItem(new FabricItemSettings().group(ModItemGroup.REKSON).fireproof().maxCount(1)));
+
     public static final Item FRUIT_SNACKS = registerItem("fruit_snacks",
             new Item(new FabricItemSettings().group(ModItemGroup.REKSON).food(
                     new FoodComponent.Builder().hunger(2).saturationModifier(0.3f).statusEffect(
@@ -52,6 +54,23 @@ public class ModItems {
             new AliasedBlockItem(ModBlocks.REKSON_ONION_CROP,
                     new FabricItemSettings().group(ModItemGroup.REKSON).food(
                             new FoodComponent.Builder().hunger(1).saturationModifier(0.7f).build())));
+
+    public static final Item LOTION_SWORD = registerItem("lotion_sword",
+            new SwordItem(ToolMaterials.IRON,4,-2.4f,
+                    new FabricItemSettings().group(ModItemGroup.REKSON)));
+    public static final Item LOTION_AXE = registerItem("lotion_axe",
+            new AxeItem(ToolMaterials.IRON,6,-3.1f,
+                    new FabricItemSettings().group(ModItemGroup.REKSON)));
+    public static final Item LOTION_PICKAXE = registerItem("lotion_pickaxe",
+            new PickaxeItem(ToolMaterials.IRON,1,-2.8f,
+                    new FabricItemSettings().group(ModItemGroup.REKSON)));
+    public static final Item LOTION_HOE = registerItem("lotion_hoe",
+            new ModHoeItem(ToolMaterials.IRON,-1,-1.0f,
+                    new FabricItemSettings().group(ModItemGroup.REKSON)));
+    public static final Item LOTION_SHOVEL = registerItem("lotion_shovel",
+            new ShovelItem(ToolMaterials.IRON,2,-3.0f,
+                    new FabricItemSettings().group(ModItemGroup.REKSON)));
+
 
     public static final Item DRUDGE_DISC = registerItem("drudge_disc",
             new ModMusicDiscItem(16, ModSounds.DRUDGE,

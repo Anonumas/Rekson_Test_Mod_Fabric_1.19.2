@@ -11,6 +11,7 @@ import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.item.*;
 import net.minecraft.util.Identifier;
+import net.minecraft.util.Rarity;
 import net.minecraft.util.registry.Registry;
 
 
@@ -77,16 +78,16 @@ public class ModItems {
 
     public static final Item DRUDGE_DISC = registerItem("drudge_disc",
             new ModMusicDiscItem(16, ModSounds.DRUDGE,
-                    new FabricItemSettings().group(ModItemGroup.REKSON).maxCount(1),218));
+                    new FabricItemSettings().group(ModItemGroup.REKSON).maxCount(1).rarity(Rarity.RARE),218));
     public static final Item WET_BRICK_DRY_BRICK_DISC = registerItem("wet_brick_dry_brick_disc",
             new ModMusicDiscItem(4, ModSounds.WET_BRICK_DRY_BRICK,
-                    new FabricItemSettings().group(ModItemGroup.REKSON).maxCount(1),242));
+                    new FabricItemSettings().group(ModItemGroup.REKSON).maxCount(1).rarity(Rarity.RARE),242));
     public static final Item UKULELE_APOLOGY_DISC = registerItem("ukulele_apology_disc",
             new ModMusicDiscItem(4, ModSounds.UKULELE_APOLOGY,
-                    new FabricItemSettings().group(ModItemGroup.REKSON).maxCount(1),273));
+                    new FabricItemSettings().group(ModItemGroup.REKSON).maxCount(1).rarity(Rarity.RARE),273));
     public static final Item LOLA_LOADING_DISS_DISC = registerItem("lola_loading_diss_disc",
             new ModMusicDiscItem(8, ModSounds.LOLA_LOADING_DISS,
-                    new FabricItemSettings().group(ModItemGroup.REKSON).maxCount(1),232));
+                    new FabricItemSettings().group(ModItemGroup.REKSON).maxCount(1).rarity(Rarity.RARE),232));
 
 
     private static Item registerItem(String name, Item item) {

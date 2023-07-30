@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "A": {
+      "item": "minecraft:white_wool"
+    },
+    "B": {
+      "item": "minecraft:leather"
+    }
+  },
+  "pattern": [
+    "A  ",
+    "BBB",
+    "BBB"
+  ],
+  "result": {
+    "item": "reksontestmod:lotion_axe"
+  }
+}

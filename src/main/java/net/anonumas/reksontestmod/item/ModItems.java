@@ -21,6 +21,9 @@ public class ModItems {
                     new FoodComponent.Builder().hunger(1).saturationModifier(0.3f).statusEffect(
                             new StatusEffectInstance(StatusEffects.NAUSEA, 100, 1),
                             1f).build())));
+    public static final Item SHOE = registerItem("shoe",
+            new Item(new FabricItemSettings().group(ModItemGroup.REKSON).food(
+                    new FoodComponent.Builder().hunger(8).saturationModifier(1f).build())));
     public static final Item SWEET_AND_SALTY_FRUIT_SNACKS = registerItem("sweet_and_salty_fruit_snacks",
             new Item(new FabricItemSettings().group(ModItemGroup.REKSON).food(
                     new FoodComponent.Builder().hunger(6).saturationModifier(1.0f).statusEffect(

@@ -2,6 +2,7 @@ package net.anonumas.reksontestmod.item;
 
 import net.anonumas.reksontestmod.ReksonTestMod;
 import net.anonumas.reksontestmod.block.ModBlocks;
+import net.anonumas.reksontestmod.entity.ModEntities;
 import net.anonumas.reksontestmod.item.custom.ModHoeItem;
 import net.anonumas.reksontestmod.item.custom.ModMusicDiscItem;
 import net.anonumas.reksontestmod.item.custom.ReksonFaceItem;
@@ -90,6 +91,11 @@ public class ModItems {
             new ModMusicDiscItem(8, ModSounds.LOLA_LOADING_DISS,
                     new FabricItemSettings().group(ModItemGroup.REKSON).maxCount(1).rarity(Rarity.RARE).fireproof(),
                     232));
+
+    public static final Item REKSON_SPAWN_EGG = registerItem("rekson_spawn_egg",
+            new SpawnEggItem(ModEntities.REKSON,0xfab043, 0xfdd396,
+                    new FabricItemSettings().group(ModItemGroup.REKSON).fireproof()));
+
 
 
     private static Item registerItem(String name, Item item) {

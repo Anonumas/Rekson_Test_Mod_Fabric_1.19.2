@@ -4,6 +4,7 @@
   "package": "net.anonumas.reksontestmod.mixin",
   "compatibilityLevel": "JAVA_17",
   "mixins": [
+    "LivingEntityMixin"
   ],
   "client": [
     "ExampleMixin"

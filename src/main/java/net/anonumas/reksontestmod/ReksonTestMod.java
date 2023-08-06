@@ -5,6 +5,7 @@ import net.anonumas.reksontestmod.effect.ModEffects;
 import net.anonumas.reksontestmod.entity.ModEntities;
 import net.anonumas.reksontestmod.entity.custom.ReksonEntity;
 import net.anonumas.reksontestmod.item.ModItems;
+import net.anonumas.reksontestmod.potion.ModPotions;
 import net.anonumas.reksontestmod.util.ModLootTableModifiers;
 import net.anonumas.reksontestmod.villager.ModVillagers;
 import net.anonumas.reksontestmod.world.feature.ModConfiguredFeatures;
@@ -33,6 +34,7 @@ public class ReksonTestMod implements ModInitializer {
 		GeckoLib.initialize();
 		FabricDefaultAttributeRegistry.register(ModEntities.REKSON, ReksonEntity.setAttributes());
 		ModEffects.registerEffects();
+		ModPotions.registerPotions();
 
 	}
 }

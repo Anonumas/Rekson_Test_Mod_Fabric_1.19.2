@@ -3,9 +3,7 @@ package net.anonumas.reksontestmod.item;
 import net.anonumas.reksontestmod.ReksonTestMod;
 import net.anonumas.reksontestmod.block.ModBlocks;
 import net.anonumas.reksontestmod.entity.ModEntities;
-import net.anonumas.reksontestmod.item.custom.ModHoeItem;
-import net.anonumas.reksontestmod.item.custom.ModMusicDiscItem;
-import net.anonumas.reksontestmod.item.custom.ReksonFaceItem;
+import net.anonumas.reksontestmod.item.custom.*;
 import net.anonumas.reksontestmod.sound.ModSounds;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.minecraft.entity.effect.StatusEffectInstance;
@@ -24,7 +22,7 @@ public class ModItems {
                             new StatusEffectInstance(StatusEffects.NAUSEA, 100, 1),
                             1f).build())));
     public static final Item SHOE = registerItem("shoe",
-            new Item(new FabricItemSettings().group(ModItemGroup.REKSON).food(
+            new ModShoeItem(new FabricItemSettings().group(ModItemGroup.REKSON).food(
                     new FoodComponent.Builder().hunger(8).saturationModifier(1f).build())));
     public static final Item SWEET_AND_SALTY_FRUIT_SNACKS = registerItem("sweet_and_salty_fruit_snacks",
             new Item(new FabricItemSettings().group(ModItemGroup.REKSON).food(
@@ -61,10 +59,10 @@ public class ModItems {
                             new FoodComponent.Builder().hunger(1).saturationModifier(0.7f).build())));
 
     public static final Item LOTION_SWORD = registerItem("lotion_sword",
-            new SwordItem(ToolMaterials.IRON,2,-2.4f,
+            new LotionSwordItem(ToolMaterials.IRON,2,-2.4f,
                     new FabricItemSettings().group(ModItemGroup.REKSON)));
     public static final Item LOTION_AXE = registerItem("lotion_axe",
-            new AxeItem(ToolMaterials.IRON,6,-3.1f,
+            new LotionAxeItem(ToolMaterials.IRON,4,-3.0f,
                     new FabricItemSettings().group(ModItemGroup.REKSON)));
     public static final Item LOTION_PICKAXE = registerItem("lotion_pickaxe",
             new PickaxeItem(ToolMaterials.IRON,1,-2.8f,

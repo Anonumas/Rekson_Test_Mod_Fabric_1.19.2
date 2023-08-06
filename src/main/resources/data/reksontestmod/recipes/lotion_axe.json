@@ -6,11 +6,14 @@
     },
     "B": {
       "item": "minecraft:stick"
+    },
+    "C": {
+      "item": "minecraft:diamond_axe"
     }
   },
   "pattern": [
     "AA ",
-    "AB ",
+    "AC ",
     " B "
   ],
   "result": {

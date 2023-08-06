@@ -27,6 +27,15 @@
 
   "item.reksontestmod.rekson_spawn_egg": "Rekson Spawn Egg",
 
+  "effect.reksontestmod.soft_skin": "Soft Skin",
+  "item.minecraft.potion.effect.soft_skin_potion": "Potion of Soft Skin",
+  "item.minecraft.lingering_potion.effect.soft_skin_potion": "Lingering Potion of Soft Skin",
+  "item.minecraft.splash_potion.effect.soft_skin_potion": "Splash Potion of Soft Skin",
+  "item.minecraft.tipped_arrow.effect.soft_skin_potion": "Arrow of Soft Skin",
+
+
+
+
 
 
 
@@ -38,7 +47,6 @@
 
   "itemGroup.reksontestmod.rekson": "Rekson Mod",
 
-  "effect.reksontestmod.soft_skin": "Soft Skin",
 
   "key.category.reksontestmod.rekson": "Rekson Keys",
   "key.reksontestmod.pay_respects": "Pay Respects"

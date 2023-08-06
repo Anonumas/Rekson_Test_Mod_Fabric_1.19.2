@@ -30,7 +30,7 @@ public class ReksonEntity extends PassiveEntity implements IAnimatable {
 
     public static DefaultAttributeContainer.Builder setAttributes() {
         return PassiveEntity.createMobAttributes()
-                .add(EntityAttributes.GENERIC_MAX_HEALTH, 20.0D)
+                .add(EntityAttributes.GENERIC_MAX_HEALTH, 15.0D)
                 .add(EntityAttributes.GENERIC_MOVEMENT_SPEED, 0.25f);
     }
     private <E extends IAnimatable> PlayState predicate(AnimationEvent<E> event) {

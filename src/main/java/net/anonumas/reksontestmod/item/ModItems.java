@@ -61,7 +61,7 @@ public class ModItems {
                             new FoodComponent.Builder().hunger(1).saturationModifier(0.7f).build())));
 
     public static final Item LOTION_SWORD = registerItem("lotion_sword",
-            new SwordItem(ToolMaterials.IRON,4,-2.4f,
+            new SwordItem(ToolMaterials.IRON,2,-2.4f,
                     new FabricItemSettings().group(ModItemGroup.REKSON)));
     public static final Item LOTION_AXE = registerItem("lotion_axe",
             new AxeItem(ToolMaterials.IRON,6,-3.1f,

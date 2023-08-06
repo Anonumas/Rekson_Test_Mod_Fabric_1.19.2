@@ -4,6 +4,7 @@ import net.anonumas.reksontestmod.block.ModBlocks;
 import net.anonumas.reksontestmod.effect.ModEffects;
 import net.anonumas.reksontestmod.entity.ModEntities;
 import net.anonumas.reksontestmod.entity.custom.ReksonEntity;
+import net.anonumas.reksontestmod.fluid.ModFluids;
 import net.anonumas.reksontestmod.item.ModItems;
 import net.anonumas.reksontestmod.potion.ModPotions;
 import net.anonumas.reksontestmod.util.ModLootTableModifiers;
@@ -33,6 +34,7 @@ public class ReksonTestMod implements ModInitializer {
 		ModLootTableModifiers.modifyLootTables();
 		GeckoLib.initialize();
 		FabricDefaultAttributeRegistry.register(ModEntities.REKSON, ReksonEntity.setAttributes());
+		ModFluids.register();
 		ModEffects.registerEffects();
 		ModPotions.registerPotions();
 

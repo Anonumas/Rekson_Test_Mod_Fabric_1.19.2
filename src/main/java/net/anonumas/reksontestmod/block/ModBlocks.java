@@ -24,7 +24,8 @@ public class ModBlocks {
     public static final Block BLOCK_OF_LOTION = registerBlock("block_of_lotion",
             new Block(FabricBlockSettings.of(Material.METAL).strength(5f).requiresTool()), ModItemGroup.REKSON);
     public static final Block REKSON_STATUE = registerBlock("rekson_statue",
-            new ReksonStatueBlock(FabricBlockSettings.of(Material.METAL).strength(1f).nonOpaque()), ModItemGroup.REKSON);
+            new ReksonStatueBlock(FabricBlockSettings.of(Material.METAL).strength(1f).nonOpaque().luminance(state -> 3)),
+            ModItemGroup.REKSON);
     public static final Block FRUIT_SNACKS_CROP = registerBlockWithoutItem("fruit_snacks_crop",
             new FruitSnacksCrop(FabricBlockSettings.copy(Blocks.WHEAT)));
     public static final Block REKSON_ONION_CROP = registerBlockWithoutItem("rekson_onion_crop",

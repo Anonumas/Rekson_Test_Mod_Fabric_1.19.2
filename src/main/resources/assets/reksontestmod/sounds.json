@@ -30,5 +30,85 @@
         "stream": true
       }
     ]
+  },
+  "erekson_dysfunction": {
+    "sounds": [
+      {
+        "name": "reksontestmod:erekson_dysfunction",
+        "stream": true
+      }
+    ]
+  },
+  "rekgasm": {
+    "sounds": [
+      {
+        "name": "reksontestmod:rekgasm",
+        "stream": true
+      }
+    ]
+  },
+  "rekson_always_lick": {
+    "sounds": [
+      {
+        "name": "reksontestmod:rekson_always_lick",
+        "stream": true
+      }
+    ]
+  },
+  "rekson_appreciates_tips": {
+    "sounds": [
+      {
+        "name": "reksontestmod:rekson_appreciates_tips",
+        "stream": true
+      }
+    ]
+  },
+  "rekson_cant_get_it_out": {
+    "sounds": [
+      {
+        "name": "reksontestmod:rekson_cant_get_it_out",
+        "stream": true
+      }
+    ]
+  },
+  "rekson_haggles_for_head": {
+    "sounds": [
+      {
+        "name": "reksontestmod:rekson_haggles_for_head",
+        "stream": true
+      }
+    ]
+  },
+  "rekson_humps": {
+    "sounds": [
+      {
+        "name": "reksontestmod:rekson_humps",
+        "stream": true
+      }
+    ]
+  },
+  "rekson_shove_it": {
+    "sounds": [
+      {
+        "name": "reksontestmod:rekson_shove_it",
+        "stream": true
+      }
+    ]
+  },
+  "rekson_unfair": {
+    "sounds": [
+      {
+        "name": "reksontestmod:rekson_unfair",
+        "stream": true
+      }
+    ]
+  },
+  "rekson_vibrating_sword": {
+    "sounds": [
+      {
+        "name": "reksontestmod:rekson_vibrating_sword",
+        "stream": true
+      }
+    ]
   }
 }

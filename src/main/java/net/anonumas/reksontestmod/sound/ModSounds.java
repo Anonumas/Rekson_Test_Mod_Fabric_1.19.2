@@ -12,6 +12,17 @@ public class ModSounds {
     public static SoundEvent UKULELE_APOLOGY = registerSoundEvent("ukulele_apology");
     public static SoundEvent LOLA_LOADING_DISS = registerSoundEvent("lola_loading_diss");
 
+    public static SoundEvent EREKSON_DYSFUNCTION = registerSoundEvent("erekson_dysfunction");
+    public static SoundEvent REKGASM = registerSoundEvent("rekgasm");
+    public static SoundEvent REKSON_ALWAYS_LICK = registerSoundEvent("rekson_always_lick");
+    public static SoundEvent REKSON_APPRECIATES_TIPS = registerSoundEvent("rekson_appreciates_tips");
+    public static SoundEvent REKSON_CANT_GET_IT_OUT = registerSoundEvent("rekson_cant_get_it_out");
+    public static SoundEvent REKSON_HAGGLES_FOR_HEAD = registerSoundEvent("rekson_haggles_for_head");
+    public static SoundEvent REKSON_HUMPS = registerSoundEvent("rekson_humps");
+    public static SoundEvent REKSON_SHOVE_IT = registerSoundEvent("rekson_shove_it");
+    public static SoundEvent REKSON_UNFAIR = registerSoundEvent("rekson_unfair");
+    public static SoundEvent REKSON_VIBRATING_SWORD = registerSoundEvent("rekson_vibrating_sword");
+
     private static SoundEvent registerSoundEvent(String name){
         Identifier id = new Identifier(ReksonTestMod.MOD_ID, name);
         return Registry.register(Registry.SOUND_EVENT, id, new SoundEvent(id));

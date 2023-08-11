@@ -1,12 +1,20 @@
 package net.anonumas.reksontestmod.entity.custom;
 
+import net.anonumas.reksontestmod.item.ModItems;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.ai.goal.*;
 import net.minecraft.entity.attribute.DefaultAttributeContainer;
 import net.minecraft.entity.attribute.EntityAttributes;
+import net.minecraft.entity.damage.DamageSource;
+import net.minecraft.entity.effect.StatusEffectInstance;
+import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.entity.passive.PassiveEntity;
 import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.item.Item;
+import net.minecraft.item.ItemStack;
 import net.minecraft.server.world.ServerWorld;
+import net.minecraft.util.ActionResult;
+import net.minecraft.util.Hand;
 import net.minecraft.world.World;
 import org.jetbrains.annotations.Nullable;
 import software.bernie.geckolib3.core.IAnimatable;
@@ -20,6 +28,8 @@ import software.bernie.geckolib3.core.manager.AnimationFactory;
 import software.bernie.geckolib3.util.GeckoLibUtil;
 
 public class ReksonEntity extends PassiveEntity implements IAnimatable {
+    private static final Item CASHEWS = ModItems.CASHEW;
+
 
     private AnimationFactory factory = GeckoLibUtil.createFactory(this);
     public ReksonEntity(EntityType<? extends PassiveEntity> entityType, World world) {
@@ -54,6 +64,23 @@ public class ReksonEntity extends PassiveEntity implements IAnimatable {
 
     }
 
+    @Override
+    protected ActionResult interactMob(PlayerEntity player, Hand hand) {
+        ItemStack itemStack = player.getStackInHand(hand);
+
+        if (itemStack.isOf(CASHEWS)) {
+            if (!player.getAbilities().creativeMode) {
+                itemStack.decrement(1);
+            }
+            this.addStatusEffect(new StatusEffectInstance(StatusEffects.POISON, 900));
+            if (player.isCreative() || !this.isInvulnerable()) {
+                this.damage(DamageSource.player(player), Float.MAX_VALUE);
+            }
+            return ActionResult.success(this.world.isClient);
+        }
+
+        return super.interactMob(player, hand);
+    }
 
     @Nullable
     @Override

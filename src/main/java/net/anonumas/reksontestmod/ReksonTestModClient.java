@@ -18,6 +18,9 @@ public class ReksonTestModClient implements ClientModInitializer {
     public void onInitializeClient() {
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.FRUIT_SNACKS_CROP, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.REKSON_ONION_CROP, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.CASHEW_LEAVES, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.CASHEWLESS_LEAVES, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.CASHEW_TREE_SAPLING, RenderLayer.getCutout());
         KeyInputHandler.register();
 
         EntityRendererRegistry.register(ModEntities.REKSON, ReksonRenderer::new);

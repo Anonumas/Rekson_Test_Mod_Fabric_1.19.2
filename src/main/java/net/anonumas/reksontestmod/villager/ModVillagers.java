@@ -2,6 +2,7 @@ package net.anonumas.reksontestmod.villager;
 
 import com.google.common.collect.ImmutableSet;
 import net.anonumas.reksontestmod.ReksonTestMod;
+import net.anonumas.reksontestmod.block.ModBlocks;
 import net.anonumas.reksontestmod.item.ModItems;
 import net.fabricmc.fabric.api.object.builder.v1.trade.TradeOfferHelper;
 import net.fabricmc.fabric.api.object.builder.v1.world.poi.PointOfInterestHelper;
@@ -25,6 +26,14 @@ public class ModVillagers {
             factories.add((entity, random) -> new TradeOffer(
                     new ItemStack(Items.EMERALD,1),
                     new ItemStack(ModItems.CINNAMON_POWDER,16),
+                    6,2,0.02f
+            ));
+                });
+        TradeOfferHelper.registerVillagerOffers(VillagerProfession.FARMER,1,
+                factories -> {
+            factories.add((entity, random) -> new TradeOffer(
+                    new ItemStack(Items.EMERALD,16),
+                    new ItemStack(ModBlocks.CASHEW_TREE_SAPLING,1),
                     6,2,0.02f
             ));
                 });

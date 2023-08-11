@@ -7,10 +7,11 @@ import net.anonumas.reksontestmod.entity.custom.ReksonEntity;
 import net.anonumas.reksontestmod.fluid.ModFluids;
 import net.anonumas.reksontestmod.item.ModItems;
 import net.anonumas.reksontestmod.potion.ModPotions;
+import net.anonumas.reksontestmod.util.ModFlammableBlocks;
 import net.anonumas.reksontestmod.util.ModLootTableModifiers;
 import net.anonumas.reksontestmod.villager.ModVillagers;
 import net.anonumas.reksontestmod.world.feature.ModConfiguredFeatures;
-import net.anonumas.reksontestmod.world.gen.ModOreGeneration;
+import net.anonumas.reksontestmod.world.gen.ModWorldGen;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.object.builder.v1.entity.FabricDefaultAttributeRegistry;
 import org.slf4j.Logger;
@@ -28,9 +29,10 @@ public class ReksonTestMod implements ModInitializer {
 
 		ModItems.resisterModItems();
 		ModBlocks.resisterModBlocks();
+		ModFlammableBlocks.registerFlammableBlocks();
 		ModVillagers.registerVillagers();
 		ModVillagers.registerTrades();
-		ModOreGeneration.GenerateOres();
+		ModWorldGen.generateWorldGen();
 		ModLootTableModifiers.modifyLootTables();
 		GeckoLib.initialize();
 		FabricDefaultAttributeRegistry.register(ModEntities.REKSON, ReksonEntity.setAttributes());

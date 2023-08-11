@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/leaves",
+  "textures": {
+    "all": "reksontestmod:block/cashewless_leaves"
+  }
+}

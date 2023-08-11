@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "reksontestmod:block/cashew_tree_sapling"
+  }
+}

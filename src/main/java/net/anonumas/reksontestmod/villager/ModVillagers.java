@@ -32,7 +32,7 @@ public class ModVillagers {
         TradeOfferHelper.registerVillagerOffers(VillagerProfession.FARMER,1,
                 factories -> {
             factories.add((entity, random) -> new TradeOffer(
-                    new ItemStack(Items.EMERALD,16),
+                    new ItemStack(Items.EMERALD,10),
                     new ItemStack(ModBlocks.CASHEW_TREE_SAPLING,1),
                     6,2,0.02f
             ));

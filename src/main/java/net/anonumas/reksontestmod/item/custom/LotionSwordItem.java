@@ -16,7 +16,7 @@ public class LotionSwordItem extends SwordItem {
 
     @Override
     public boolean postHit(ItemStack stack, LivingEntity target, LivingEntity attacker) {
-        target.addStatusEffect(new StatusEffectInstance(ModEffects.SOFT_SKIN, 20,4), attacker);
+        target.addStatusEffect(new StatusEffectInstance(ModEffects.SOFT_SKIN, 50,4), attacker);
         return super.postHit(stack, target, attacker);
     }
 }

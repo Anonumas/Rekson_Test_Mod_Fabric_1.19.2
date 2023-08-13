@@ -23,6 +23,22 @@
       }
     ]
   },
+  "talent_show_diss": {
+    "sounds": [
+      {
+        "name": "reksontestmod:talent_show_roast",
+        "stream": true
+      }
+    ]
+  },
+  "filian_diss": {
+    "sounds": [
+      {
+        "name": "reksontestmod:filian_roast",
+        "stream": true
+      }
+    ]
+  },
   "lola_loading_diss": {
     "sounds": [
       {
@@ -107,6 +123,22 @@
     "sounds": [
       {
         "name": "reksontestmod:rekson_vibrating_sword",
+        "stream": true
+      }
+    ]
+  },
+  "rekson_death": {
+    "sounds": [
+      {
+        "name": "reksontestmod:rekson_death",
+        "stream": true
+      }
+    ]
+  },
+  "rekson_hurt": {
+    "sounds": [
+      {
+        "name": "reksontestmod:rekson_hurt",
         "stream": true
       }
     ]

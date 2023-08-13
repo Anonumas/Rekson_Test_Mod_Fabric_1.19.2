@@ -92,6 +92,14 @@ public class ModItems {
             new ModMusicDiscItem(8, ModSounds.LOLA_LOADING_DISS,
                     new FabricItemSettings().group(ModItemGroup.REKSON).maxCount(1).rarity(Rarity.RARE).fireproof(),
                     232));
+    public static final Item FILIAN_DISS_DISC = registerItem("filian_diss_disc",
+            new ModMusicDiscItem(4, ModSounds.FILIAN_DISS,
+                    new FabricItemSettings().group(ModItemGroup.REKSON).maxCount(1).rarity(Rarity.RARE).fireproof(),
+                    191));
+    public static final Item TALENT_SHOW_DISS_DISC = registerItem("talent_show_diss_disc",
+            new ModMusicDiscItem(8, ModSounds.TALENT_SHOW_DISS,
+                    new FabricItemSettings().group(ModItemGroup.REKSON).maxCount(1).rarity(Rarity.RARE).fireproof(),
+                    211));
 
     public static final Item REKSON_SPAWN_EGG = registerItem("rekson_spawn_egg",
             new SpawnEggItem(ModEntities.REKSON,0xfab043, 0xfdd396,

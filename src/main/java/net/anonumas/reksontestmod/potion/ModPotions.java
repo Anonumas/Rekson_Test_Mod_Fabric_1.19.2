@@ -15,7 +15,7 @@ public class ModPotions {
 
     public static Potion registerPotion(String name) {
         return Registry.register(Registry.POTION, new Identifier(ReksonTestMod.MOD_ID, name),
-                new Potion(new StatusEffectInstance(ModEffects.SOFT_SKIN, 200, 0)));
+                new Potion(new StatusEffectInstance(ModEffects.SOFT_SKIN, 2000, 0)));
     }
 
     public static void registerPotions(){

@@ -74,7 +74,7 @@ public class LotionBottleBlock extends HorizontalFacingBlock {
         builder.add(FACING);
     }
     public ActionResult onUse(BlockState state, World world, BlockPos pos, PlayerEntity player, Hand hand, BlockHitResult hit) {
-        if (world.isClient && hand == Hand.MAIN_HAND){
+        if (!world.isClient && hand == Hand.MAIN_HAND){
             ItemStack itemStack = player.getStackInHand(hand);
 
             if(itemStack.isOf(Items.BUCKET)){

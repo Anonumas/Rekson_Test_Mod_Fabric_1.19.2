@@ -3,6 +3,7 @@ package net.anonumas.reksontestmod.item;
 import net.anonumas.reksontestmod.ReksonTestMod;
 import net.anonumas.reksontestmod.block.ModBlocks;
 import net.anonumas.reksontestmod.entity.ModEntities;
+import net.anonumas.reksontestmod.item.ModItemGroup;
 import net.anonumas.reksontestmod.item.custom.*;
 import net.anonumas.reksontestmod.sound.ModSounds;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
@@ -37,6 +38,18 @@ public class ModItems {
                     ).build())));
     public static final Item LOTION_INGOT = registerItem("lotion_ingot",
             new Item(new FabricItemSettings().group(ModItemGroup.REKSON)));
+    public static final Item FILIAN_DISC_CORE = registerItem("filian_disc_core",
+            new Item(new FabricItemSettings().group(ModItemGroup.REKSON)));
+    public static final Item TALENT_SHOW_DISC_CORE = registerItem("talent_show_disc_core",
+            new Item(new FabricItemSettings().group(ModItemGroup.REKSON)));
+    public static final Item WET_BRICK_DRY_BRICK_DISC_CORE = registerItem("wet_brick_dry_brick_disc_core",
+            new Item(new FabricItemSettings().group(ModItemGroup.REKSON)));
+    public static final Item LOLA_LOADING_DISC_CORE = registerItem("lola_loading_disc_core",
+            new Item(new FabricItemSettings().group(ModItemGroup.REKSON)));
+    public static final Item DRUDGE_DISC_CORE = registerItem("drudge_disc_core",
+            new Item(new FabricItemSettings().group(ModItemGroup.REKSON)));
+    public static final Item BLANK_DISC = registerItem("blank_disc",
+            new Item(new FabricItemSettings().group(ModItemGroup.REKSON)));
 
 
     public static final Item FISH_SAUCE = registerItem("fish_sauce",
@@ -62,10 +75,10 @@ public class ModItems {
                             new FoodComponent.Builder().hunger(1).saturationModifier(0.7f).build())));
 
     public static final Item LOTION_SWORD = registerItem("lotion_sword",
-            new LotionSwordItem(ToolMaterials.IRON,2,-2.4f,
+            new LotionSwordItem(ToolMaterials.IRON,3,-2.4f,
                     new FabricItemSettings().group(ModItemGroup.REKSON)));
     public static final Item LOTION_AXE = registerItem("lotion_axe",
-            new LotionAxeItem(ToolMaterials.IRON,4,-3.0f,
+            new LotionAxeItem(ToolMaterials.IRON,6,-3.0f,
                     new FabricItemSettings().group(ModItemGroup.REKSON)));
     public static final Item LOTION_PICKAXE = registerItem("lotion_pickaxe",
             new PickaxeItem(ToolMaterials.IRON,1,-2.8f,

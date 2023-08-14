@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "A": {
+      "item": "minecraft:magenta_concrete"
+    },
+    "B": {
+      "item": "minecraft:white_concrete"
+    },
+    "C": {
+      "item": "minecraft:purple_concrete"
+    },
+    "D": {
+      "item": "minecraft:black_concrete"
+    },
+    "E": {
+      "item": "minecraft:orange_concrete"
+    }
+  },
+  "pattern": [
+    "ACA",
+    "B B",
+    "EDE"
+  ],
+  "result": {
+    "item": "reksontestmod:filian_disc_core"
+  }
+}

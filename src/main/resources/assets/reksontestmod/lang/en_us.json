@@ -12,6 +12,13 @@
   "item.reksontestmod.lotion_bucket": "Bucket of Lotion",
   "item.reksontestmod.cashew": "Cashew",
 
+  "item.reksontestmod.lola_loading_disc_core": "Lola Loading Disc Core",
+  "item.reksontestmod.filian_disc_core": "Filian Disc Core",
+  "item.reksontestmod.drudge_disc_core": "Drudge Disc Core",
+  "item.reksontestmod.talent_show_disc_core": "Talent Show Disc Core",
+  "item.reksontestmod.wet_brick_dry_brick_disc_core": "Wet Brick Dry Brick Disc Core",
+  "item.reksontestmod.blank_disc": "Blank Disc",
+
   "item.reksontestmod.lotion_sword": "Lotion Sword",
   "item.reksontestmod.lotion_axe": "Lotion Axe",
   "item.reksontestmod.lotion_pickaxe": "Lotion Pickaxe",
@@ -49,6 +56,7 @@
   "block.reksontestmod.cashewless_leaves": "Cashewless Leaves",
   "block.reksontestmod.cashew_leaves": "Cashew Leaves",
   "block.reksontestmod.cashew_tree_sapling": "Cashew Tree Sapling",
+  "block.reksontestmod.lotion_bottle": "Lotion Bottle",
 
 
   "itemGroup.reksontestmod.rekson": "Rekson Mod",

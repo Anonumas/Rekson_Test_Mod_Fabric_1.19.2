@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "reksontestmod:blank_disc"
+    },
+    {
+      "item": "minecraft:flint_and_steel"
+    },
+    {
+      "item": "reksontestmod:talent_show_disc_core"
+    }
+  ],
+  "result": {
+    "item": "reksontestmod:talent_show_diss_disc"
+  }
+}

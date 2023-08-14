@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "reksontestmod:blank_disc"
+    },
+    {
+      "item": "reksontestmod:wet_brick_dry_brick_disc_core"
+    }
+  ],
+  "result": {
+    "item": "reksontestmod:wet_brick_dry_brick_disc"
+  }
+}

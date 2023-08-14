@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "A": {
+      "item": "reksontestmod:block_of_lotion"
+    },
+    "B": {
+      "item": "minecraft:stick"
+    },
+    "C": {
+      "item": "minecraft:white_concrete"
+    }
+  },
+  "pattern": [
+    " B ",
+    "CAC",
+    "CCC"
+  ],
+  "result": {
+    "item": "reksontestmod:lotion_bottle"
+  }
+}

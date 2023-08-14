@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "A": {
+      "item": "minecraft:pink_concrete"
+    },
+    "B": {
+      "item": "minecraft:white_concrete"
+    },
+    "C": {
+      "item": "minecraft:light_blue_concrete"
+    },
+    "D": {
+      "item": "minecraft:black_concrete"
+    },
+    "E": {
+      "item": "minecraft:orange_concrete"
+    }
+  },
+  "pattern": [
+    "BAC",
+    "D A",
+    "EDB"
+  ],
+  "result": {
+    "item": "reksontestmod:lola_loading_disc_core"
+  }
+}

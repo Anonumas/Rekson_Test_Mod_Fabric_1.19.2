@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "reksontestmod:blank_disc"
+    },
+    {
+      "item": "reksontestmod:drudge_disc_core"
+    }
+  ],
+  "result": {
+    "item": "reksontestmod:drudge_disc"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "reksontestmod:item/wet_brick_dry_brick_disc_core"
+  }
+}

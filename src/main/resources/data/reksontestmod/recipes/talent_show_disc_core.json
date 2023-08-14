@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:red_concrete"
+    },
+    {
+      "item": "minecraft:black_concrete"
+    },
+    {
+      "item": "minecraft:purple_concrete"
+    },
+    {
+      "item": "minecraft:white_concrete"
+    },
+    {
+      "item": "minecraft:orange_concrete"
+    },
+    {
+      "item": "minecraft:light_blue_concrete"
+    },
+    {
+      "item": "minecraft:cyan_concrete"
+    },
+    {
+      "item": "minecraft:lime_concrete"
+    }
+  ],
+  "result": {
+    "item": "reksontestmod:talent_show_disc_core"
+  }
+}

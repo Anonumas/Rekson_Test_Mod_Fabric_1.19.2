@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "A": {
+      "item": "minecraft:light_blue_concrete"
+    },
+    "B": {
+      "item": "minecraft:bricks"
+    },
+    "C": {
+      "item": "minecraft:clay"
+    }
+  },
+  "pattern": [
+    "ABB",
+    "C B",
+    "CCA"
+  ],
+  "result": {
+    "item": "reksontestmod:wet_brick_dry_brick_disc_core"
+  }
+}

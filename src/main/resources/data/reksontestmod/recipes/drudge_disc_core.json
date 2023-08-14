@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "A": {
+      "item": "minecraft:black_concrete"
+    },
+    "B": {
+      "item": "minecraft:red_concrete"
+    }
+  },
+  "pattern": [
+    "AAA",
+    "B B",
+    "AAA"
+  ],
+  "result": {
+    "item": "reksontestmod:drudge_disc_core"
+  }
+}

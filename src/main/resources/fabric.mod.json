@@ -9,12 +9,12 @@
     "Anonumas"
   ],
   "contact": {
-    "homepage": "https://fabricmc.net/",
-    "sources": "https://github.com/FabricMC/fabric-example-mod"
+    "homepage": "https://modrinth.com/mod/rekson-mod/",
+    "sources": "https://github.com/Anonumas/Rekson_Test_Mod_Fabric_1.19.2"
   },
 
-  "license": "CC0-1.0",
-  "icon": "assets/modid/icon.png",
+  "license": "MIT",
+  "icon": "assets/reksontestmod/icon.png",
 
   "environment": "*",
   "entrypoints": {
